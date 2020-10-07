@@ -1,0 +1,13 @@
+Klasa properties musi być sparametryzowana.
+Możliwość ustawienia klucza, ustawienia wartości. Modyfikowania wartości.
+
+klucz - wartość
+
+klucz to zawsze String
+wartość - to dowolny typ
+
+"właściciel" : Osoba
+"hasło" : String...
+"adres_www": Adres
+
+Przechowaj tablicę Propertiesów.
