@@ -1,4 +1,4 @@
-public class Property<T> {
+public class Property<T>{
 
     private String key;
     T value;
@@ -18,5 +18,13 @@ public class Property<T> {
 
     public void modifyValue( T value ) {
         this.value = value;
+    }
+
+    @Override
+    public String toString() {
+        return "Property{" +
+                "key='" + key + '\'' +
+                ", value=" + value +
+                '}';
     }
 }

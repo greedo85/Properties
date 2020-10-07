@@ -1,32 +1,25 @@
-public class Laptop {
+public class MobilePhone {
     private String name;
-    private double storage;
-    private int Ram;
+    private int storage;
 
-    public Laptop( String name, double storage, int ram ) {
+    public MobilePhone( String name, int storage ) {
         this.name = name;
         this.storage = storage;
-        Ram = ram;
     }
 
     public String getName() {
         return name;
     }
 
-    public double getStorage() {
+    public int getStorage() {
         return storage;
-    }
-
-    public int getRam() {
-        return Ram;
     }
 
     @Override
     public String toString() {
-        return "Laptop{" +
+        return "MobilePhone{" +
                 "name='" + name + '\'' +
                 ", storage=" + storage +
-                ", Ram=" + Ram +
                 '}';
     }
 }

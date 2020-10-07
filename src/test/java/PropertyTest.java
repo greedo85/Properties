@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Test;
 
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PropertyTest {
@@ -46,5 +47,29 @@ public class PropertyTest {
         //then
         assertEquals("LG G4", property.getValue());
 
+    }
+    @Test
+    public void findByKey()
+    {
+        //given
+        Laptop dell=new Laptop("Dell",500,8);
+        Laptop lenovo=new Laptop("Lenovo",250,6);
+        Laptop apple=new Laptop("Apple",1000,16);
+        MobilePhone samsung=new MobilePhone("Samsung",32);
+        MobilePhone motorola=new MobilePhone("Motorola",8);
+
+        Properties properties = new Properties();
+
+        properties.addProperties(new Property("laptop1",dell));
+        properties.addProperties(new Property("laptop2",lenovo));
+        properties.addProperties(new Property("laptop3",apple));
+        properties.addProperties(new Property("telefon1",samsung));
+        properties.addProperties(new Property("telefon2",motorola));
+
+        //when
+
+
+        //then
+        assertEquals(properties.propertiesArray[2],properties.findByKey("Apple"));
     }
 }

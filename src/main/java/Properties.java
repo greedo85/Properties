@@ -10,4 +10,16 @@ public class Properties {
     public void addProperties( Property property ) {
         propertiesArray[iterator++] = property;
     }
+    public Property findByKey( String name)
+    {
+        for(int i=0;i<iterator;i++)
+        {
+            if(propertiesArray[i].getKey()==name)
+            {
+                System.out.println("Znalazłem: ");
+                return propertiesArray[i];
+            }
+        }
+        return null;
+    }
 }
