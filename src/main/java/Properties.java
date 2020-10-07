@@ -1,14 +1,14 @@
 public class Properties {
 
-    Property [] properties;
+    Property [] propertiesArray;
     private int iterator=0;
     public Properties()
     {
-        properties=new Property[10];
+        propertiesArray =new Property[10];
     }
 
     public void addProperties(Property property)
     {
-        properties[iterator++]=property;
+        propertiesArray[iterator++]=property;
     }
 }

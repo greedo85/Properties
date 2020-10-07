@@ -15,4 +15,8 @@ public class Property<T> {
     public T getValue() {
         return value;
     }
+    public void modifyValue(T value)
+    {
+        this.value=value;
+    }
 }
