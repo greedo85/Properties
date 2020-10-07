@@ -16,7 +16,7 @@ public class Properties {
         {
             if(propertiesArray[i].getKey()==name)
             {
-                System.out.println("Znalazłem: ");
+                System.out.println("Znalazłem: "+propertiesArray[i]);
                 return propertiesArray[i];
             }
         }

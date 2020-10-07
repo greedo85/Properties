@@ -70,6 +70,6 @@ public class PropertyTest {
 
 
         //then
-        assertEquals(properties.propertiesArray[2],properties.findByKey("Apple"));
+        assertEquals(properties.propertiesArray[2],properties.findByKey("laptop3"));
     }
 }
